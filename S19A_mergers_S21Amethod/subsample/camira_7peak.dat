@@ -1,0 +1,37 @@
+# 1 clusters 
+# subsample selection : FWHM = 200.00 [kpc]
+# 0) projected distance from the camira centers < 1.2 r200m
+# 1) num_peak >  num_th(zcl,N) = peaks of stacked image at redshift bins
+# 2) exclude subpeaks of which distances from higher peaks are < FWHM
+# 3) num_subpeaks - sum_i diffuse_D(higher_peaks_i) > num_th(zcl)
+# diffuse_D=num_peak*normalized_radial_distribution_of_stacked_images(distance)
+# M200m=(2.01x10^-2(N*ez)**1.421)/ez from Okabe+19 + offset between S18A and S16A
+# -------------------------------------------------------------
+# 1  : camira ID 
+# 2  : camira center ra [deg]
+# 3  : camira center dec [deg]
+# 4  : camira redshift zcl 
+# 5  : camira richness N_cor 
+# 6  : camira bcg redshift zbcg 
+# 7  : camira r200m [kpc]
+# 8  : camira r200m [arcmin]
+# 9  : peak position ra 
+# 10 : peak position dec 
+# 11 : peak nu=num_peak/num_th(zcl) 
+# 12 : peak num_peak 
+# 13 : peak num_th(zcl)
+# 14 : peak num_norm=num_peak/num_main_peak 
+# 15 : peak num_peak_eff = num_peak-diffuse_from_higher_peaks
+# 16 : peak num_eff_norm=num_peak_eff/num_eff_main_peak 
+# 17 : peak d_norm=distance_camira_center/r200m 
+# 18 : peak d=distance_camira_center [kpc]
+# 19 : peak dpeak_norm=distance_main_peak/r200m
+# 20 : peak dpeak=distance_main_peak  [kpc]
+# 21 : peak order : -1 = lower than nu_th, 0= main peak, 1,2,3...=subhalo peak descending order
+C19a1sW06471 166.393456 -0.010855 0.878300 11.120000 -1.000000 642.929120 1.370000 166.393456 0.010052 2.366898 0.071904 0.030379 1.000000 0.070853 1.000000 0.915620 12376.536231 0.000000 0.000000 0.000000 
+C19a1sW06471 166.393456 -0.010855 0.878300 11.120000 -1.000000 642.929120 1.370000 166.405403 -0.022055 2.764475 0.083982 0.030379 1.167979 0.070773 0.998880 0.717183 9694.236807 1.500319 20279.961964 1.000000 
+C19a1sW06471 166.393456 -0.010855 0.878300 11.120000 -1.000000 642.929120 1.370000 166.402416 -0.034002 2.058758 0.062543 0.030379 0.869815 0.053989 0.761986 1.087023 14693.397415 1.968845 26613.077060 2.000000 
+C19a1sW06471 166.393456 -0.010855 0.878300 11.120000 -1.000000 642.929120 1.370000 166.397189 -0.010855 2.272952 0.069050 0.030379 0.960318 0.049970 0.705262 0.163504 2210.095745 0.930104 12572.317699 3.000000 
+C19a1sW06471 166.393456 -0.010855 0.878300 11.120000 -1.000000 642.929120 1.370000 166.415109 -0.013842 2.096152 0.063679 0.030379 0.885618 0.047486 0.670214 0.957300 12939.917191 1.412202 19088.882487 4.000000 
+C19a1sW06471 166.393456 -0.010855 0.878300 11.120000 -1.000000 642.929120 1.370000 166.386736 -0.036988 1.620198 0.049220 0.030379 0.684532 0.042719 0.602930 1.181759 15973.963024 2.081062 28129.926516 5.000000 
+C19a1sW06471 166.393456 -0.010855 0.878300 11.120000 -1.000000 642.929120 1.370000 166.406896 0.006318 2.003358 0.060860 0.030379 0.846407 0.038570 0.544374 0.955063 12909.683708 0.610900 8257.599202 6.000000 
